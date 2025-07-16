@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Player.css";
 
-export default function Player() {
+const Player = () => {
   return (
     <div className='player'>player</div>
   )
 }
+export default Player;
