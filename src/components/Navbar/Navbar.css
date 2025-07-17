@@ -12,6 +12,7 @@
     transparent
   );
   z-index: 1;
+ /*  overflow: hidden; */
 }
 .navbar-left {
   display: flex;
