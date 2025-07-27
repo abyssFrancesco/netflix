@@ -20,13 +20,13 @@ const Player = () => {
     headers: {
       accept: "application/json",
       Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzk5OWI0Mjc3YWQ3YWQyZTJkODJkODIyZjIxZjc1OSIsIm5iZiI6MTc1MzEwMzY2Ny42Miwic3ViIjoiNjg3ZTNkMzM4MWMxMjMyZWIxOGE0ZTRlIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.LbUmhZTH77KIs3ybXObBP2Cz7NBXLqKND1jakBgR60s",
+        `Bearer ${import.meta.env.VITE_TMDB_BEARER_TOKEN}`
     },
   };
   useEffect(() => {
     /* It executes code when it gets loaded */
     fetch(
-      `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
+      `${import.meta.env.VITE_TMDB_BASE_URL}/movie/${id}/videos?language=en-US`,
       options
     )
       .then((res) => res.json())
@@ -36,7 +36,7 @@ const Player = () => {
 
   return (
     <div className="player">
-      <img src={back_arrow_icon} alt="" onClick={()=>{navigate(-1)}}/>
+      <img src={back_arrow_icon} alt="" onClick={()=>{navigate(-2)}}/>
       <iframe
         width="90%"
         height="90%"

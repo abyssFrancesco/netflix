@@ -16,8 +16,9 @@ import { toast } from "react-toastify";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAAyQk24mCMLZJUA__TDs7O5Bw3yTVZDrQ",
-  authDomain: "netflix-clone-479a2.firebaseapp.com",
+  /* api e authdomain mascherate */
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: "netflix-clone-479a2",
   storageBucket: "netflix-clone-479a2.firebasestorage.app",
   messagingSenderId: "137467573792",
