@@ -63,7 +63,16 @@ Modifica
 npm run dev
 ```
 
-<pre lang="markdown"> ## 📁 Struttura del progetto ```text src/ ├── assets/ # Icone, immagini ├── components/ # Componenti riutilizzabili ├── pages/ # Pagine principali (Home, Login, Player) ├── firebase.js # Configurazione Firebase ├── App.jsx # Componente principale ├── main.jsx # Entry point ``` </pre>
+## 📁 Struttura del progetto
+
+```text
+src/
+├── assets/              # Icone, immagini
+├── components/          # Componenti riutilizzabili
+├── pages/               # Pagine principali (Home, Login, Player)
+├── firebase.js          # Configurazione Firebase
+├── App.jsx              # Componente principale
+├── main.jsx             # Entry point
 
 🛡️ Note sulla sicurezza
 Le chiavi API sono lette da .env ma non sono completamente nascoste nel frontend. Per maggiore sicurezza, si consiglia di usare un backend/proxy per le chiamate alle API TMDb se il progetto andrà in produzione.
