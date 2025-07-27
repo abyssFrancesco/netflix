@@ -62,6 +62,7 @@ Copia
 Modifica
 npm run dev
 ```
+
 📁 Struttura del progetto
 bash
 Copia
